@@ -8,14 +8,11 @@ import {
   ImageBackground,
 } from 'react-native';
 import Carousel from 'react-native-anchor-carousel';
-import { useSelector } from 'react-redux';
 
 const {width: windowWidth} = Dimensions.get('window');
 const INITIAL_INDEX = 0;
 
 export default function ImageCarousel({navigation, data, title}) {
-
-  const favourites = useSelector(state => state.reducer.favourites.items)
     
   const carouselRef = useRef(null);
   function renderItem({item, index}) {

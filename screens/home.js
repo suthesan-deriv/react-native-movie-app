@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button} from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import CarouselComponent from '../components/carousel'
+import CarouselComponent from '../components/carousel';
 import React from 'react';
 import { loadComingSoon } from '../actions/actions';
 
